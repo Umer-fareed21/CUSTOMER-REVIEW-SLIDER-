@@ -63,3 +63,10 @@ function randomHandler() {
 window.addEventListener("DOMContentLoaded", () => {
     showReview(currentIndex);
 });
+
+
+
+
+
+
+
