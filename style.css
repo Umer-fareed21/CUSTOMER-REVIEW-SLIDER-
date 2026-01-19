@@ -17,14 +17,6 @@
     margin: 0 auto 2rem;
 }
 
-.img-container {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto 1.5rem;
-    position: relative;
-}
-
 .review-card {
     background: white;
     padding: 2rem;
@@ -35,6 +27,14 @@
     position: relative;
 }
 
+.img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
 .img-container img {
     width: 100%;
     height: 100%;
@@ -42,7 +42,21 @@
     border-radius: 50%;
 }
 
-
+.img-container::after {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #49a6e9;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
 
 .author {
     font-weight: bold;
@@ -73,22 +87,6 @@
     border: none;
     cursor: pointer;
     margin: 0 0.5rem;
-}
-
-.img-container::after {
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: #49a6e9;
-    color: white;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
 }
 
 .random-btn {
